@@ -19,6 +19,7 @@
 
 #header a {
   text-decoration: none;
+  color: black;
 }
 
 #header a:hover {
@@ -106,6 +107,8 @@
   bottom: 40px;
   right: 35px;
   font-size: 25px;
+  text-decoration: none;
+  color: gray;
 }
 
 .start .heart-bg {
@@ -205,15 +208,15 @@
       -ms-flex-align: center;
           align-items: center;
   right: -20%;
-  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item__check i {
   font-size: 30px;
   color: white;
-  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item:hover .item__check {
@@ -245,6 +248,60 @@
 .order-btn .order:hover {
   -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.28), 0 12px 16px rgba(0, 0, 0, 0.28);
           box-shadow: 0 12px 16px rgba(0, 0, 0, 0.28), 0 12px 16px rgba(0, 0, 0, 0.28);
+}
+
+#main-footer {
+  margin-top: -10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 20px #00000010;
+          box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input, .form-group, textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: #22ac89;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-transition: 3s ease background-color;
+  transition: 3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: #d6e2ec;
 }
 
 body {
@@ -306,18 +363,28 @@ h3 {
           box-shadow: inset 0 6px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
-.header .hearder2 {
+.header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.header a:hover {
+  color: lightgray;
+}
+
+.header a .hearder2 {
   text-align: center;
   background-color: #f1f1f1;
   padding: 1.5em 1.5em;
 }
 
-#section-a h2 {
+.section-a h2 {
   text-align: left;
   margin: 1em;
 }
 
-#section-a .btn {
+.section-a .btn {
   display: inline-block;
   background-color: #f1f1f1;
   color: black;
@@ -330,12 +397,12 @@ h3 {
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-#section-a .btn:hover {
+.section-a .btn:hover {
   -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.28), 0 12px 16px rgba(0, 0, 0, 0.28);
           box-shadow: 0 12px 16px rgba(0, 0, 0, 0.28), 0 12px 16px rgba(0, 0, 0, 0.28);
 }
 
-#section-a p {
+.section-a p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +412,7 @@ h3 {
           align-items: center;
 }
 
-#section-a .number {
+.section-a .number {
   margin-right: 10px;
   background-color: #9356dc;
   width: 25px;
@@ -363,16 +430,16 @@ h3 {
   border-radius: 50%;
 }
 
-#section-a .fas {
+.section-a .fas {
   margin-right: 10px;
   font-size: 20px;
 }
 
-#section-a .store {
+.section-a .store {
   color: #9356dc;
 }
 
-#section-b {
+.section-b {
   background-color: #f1f1f1;
   margin: auto;
   padding: 1em 1em;
@@ -381,17 +448,17 @@ h3 {
   border-radius: 5px 5px;
 }
 
-#section-b h3 {
+.section-b h3 {
   margin-top: 10px;
   padding-left: 1em;
 }
 
-#section-b p {
+.section-b p {
   padding-left: 1em;
   padding-bottom: 1em;
 }
 
-#section-b .card {
+.section-b .card {
   position: relative;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -399,7 +466,7 @@ h3 {
   border-radius: 10px 10px 10px 10px;
 }
 
-#section-b img {
+.section-b img {
   display: block;
   width: 100%;
   height: 250px;
@@ -410,7 +477,7 @@ h3 {
   border-radius: 10px 10px 0 0;
 }
 
-#section-b .new {
+.section-b .new {
   background-color: #99e2d0;
   width: 50px;
   color: #22ac89;
@@ -424,14 +491,16 @@ h3 {
   text-align: center;
 }
 
-#section-b .heart {
+.section-b .heart {
   position: absolute;
   bottom: 40px;
   right: 35px;
   font-size: 25px;
+  text-decoration: none;
+  color: gray;
 }
 
-#section-b .heart-bg {
+.section-b .heart-bg {
   opacity: 0;
   position: absolute;
   bottom: 40px;
@@ -439,35 +508,60 @@ h3 {
   font-size: 25px;
 }
 
-#section-b .heart-bg:hover {
+.section-b .heart-bg:hover {
   opacity: 1;
   color: #ff79da;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-#section-b .heart-bg:hover .heart {
+.section-b .heart-bg:hover .heart {
   opacity: 0;
 }
 
-#main-footer {
+.main-footer {
   background: #363535;
   color: white;
   text-align: left;
   padding: 1em 1em;
 }
 
-#main-footer h1 {
+.main-footer h1 {
   font-family: shrikhand;
   color: white;
 }
 
-#main-footer .fas {
+.main-footer .fas {
   margin-right: 10px;
 }
 
-#main-footer .contact a {
+.main-footer .contact a {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 700px) {
+  .section-a {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .section-a h2 {
+    grid-column: span 3;
+  }
+  .section-b {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    width: 80%;
+  }
+  .section-b h2 {
+    grid-column: span 2;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

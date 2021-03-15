@@ -12,6 +12,7 @@
   }
   a {
     text-decoration: none;
+    color: black;
     &:hover {
       color: lightgray;
     }
@@ -44,6 +45,7 @@
   flex-direction: column;
   text-align: left;
   margin: 0 2em 0 2em;
+   
   h1 {
     margin-top: 3em;
   }
@@ -76,6 +78,8 @@
     bottom: 40px;
     right: 35px;
     font-size: 25px;
+     text-decoration: none;
+       color: $textcolor;
   }
 
   .heart-bg {
@@ -150,12 +154,12 @@
   justify-content: center;
   align-items: center;
   right: -20%;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item__check i {
   font-size: 30px;
   color: white;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item:hover .item__check {
   right: 0;
@@ -182,3 +186,7 @@
     }
   }
 }
+#main-footer{
+  margin-top: -10px;
+}
+
