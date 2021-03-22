@@ -116,9 +116,45 @@
   margin-bottom: 10px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  animation: fadeIn1s ease-in-out both;
   line-height: 1.4;
   overflow: hidden;
+  animation: fadeIn 1s ease-in both;
+}
+
+#item2{
+	animation-delay: 1s;
+  }
+#item3 {
+	animation-delay: 2s;
+}
+#item4 {
+	animation-delay: 3s;
+}
+#item5{
+    animation-delay: 4s;
+  }
+#item6{
+    animation-delay: 5s;
+    }
+  #item7 {
+    animation-delay: 6s;
+  }
+  #item8 {
+    animation-delay: 7s;
+  }
+  #item9 {
+    animation-delay: 8s;
+  }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 .item__desc {
   width: 88%;
